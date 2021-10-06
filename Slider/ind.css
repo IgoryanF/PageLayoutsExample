@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider__wrapper {
+    overflow: hidden;
+}
+
+.slider__items {
+    display: flex;
+}
+
+.slider__item {
+    flex: 0 0 20%;
+    max-width: 20%;
+    height: 118px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255,255,255, 0.8);
+    font-size: 7rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider__item:nth-child(1) {
+    background-image: url("../Slider/static/imgs/car.jpg");
+}
+
+.slider__item:nth-child(2) {
+    background-image: url("../Slider/static/imgs/car1.jpg");
+}
+
+.slider__item:nth-child(3) {
+    background-image: url("../Slider/static/imgs/car2.jpeg");
+}
+
+.slider__item:nth-child(4) {
+    background-image: url("../Slider/static/imgs/car3.jpg");
+}
+
+.slider__item:nth-child(5) {
+    background-image: url("../Slider/static/imgs/car4.jpg");
+}
+
+.slider__item:nth-child(6) {
+    background-image: url("../Slider/static/imgs/car5.jpeg");
+}
+
+.slider__item:nth-child(7) {
+    background-image: url("../Slider/static/imgs/car6.jpg");
+}
+
+.slider__item:nth-child(8) {
+    background-image: url("../Slider/static/imgs/car7.jpg");
+}
+
+
+.slider__control {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 118px;
+    width: 39px;
+    color: #fff;
+    text-align: center;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.slider__control_hide {
+    display: none;
+}
+
+.slider__control[data-slide='prev'] {
+    left: 0;
+}
+
+.slider__control[data-slide='next'] {
+    right: 0;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 33px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__control[data-slide='prev']::before {
+    background-image: url("../Slider/static/icons/arrow.svg");
+}
+
+.slider__control[data-slide='next']::before {
+    background-image: url("../Slider/static/icons/arrow.svg");
+    transform: rotate(180deg);
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="ind.css">
+    <script defer src="slider.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = new ChiefSlider('.slider', {
+                loop: true
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="slider">
+            <div class="slider__wrapper">
+                <div class="slider__items">
+                    <div class="slider__item">
+                    </div>
+                    <div class="slider__item">
+                    </div>
+                    <div class="slider__item">
+                    </div>
+                    <div class="slider__item">
+                    </div>
+                    <div class="slider__item">
+                    </div>
+                    <div class="slider__item">
+                    </div>
+                    <div class="slider__item">
+                    </div>
+                    <div class="slider__item">
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="slider__control" data-slide="prev"></a>
+            <a href="#" class="slider__control" data-slide="next"></a>
+        </div>
+
+    </div>
+
+</body>
+</html>
